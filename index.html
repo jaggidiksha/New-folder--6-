@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 200px;
+            width: 300px;
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="clock" >
+
+    </div>
+    <script>
+
+function updateclock(){
+   let d= new Date();
+   let h=d.getHours();
+   let m=d.getMinutes();
+   let s=d.getSeconds()
+
+   let time=`${h}: ${m} : ${s}`
+   document.getElementById("clock").textContent =time
+}
+
+updateclock()
+
+console.log("a")
+console.log("b")
+setTimeout(()=>{
+    console.log("c")
+},3000)
+console.log("d")
+
+// let d=new Date();
+// document.write(d)
+// document.write(d.getMinutes())
+
+
+
+// align :
+// 1 a
+// 2 b
+// 3 d
+// 4 c 
+
+    </script>
+</body>
+</html>
