@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--
+    promise : represents the actual completion or failure of an asyn. operation
+
+1st stage                      2nd stage                   3rd stage 
+pending                       complete/ resolve          fail/reject
+
+
+you                            meet tomo.                                friend 
+until tomo's day                 meeting                      due to some reason no meet
+                              place to meet                    meet another day 
+
+
+
+                                 promise 
+resolve                                                          reject 
+then ()                                                           catch()  cb functions
+
+syntax: new Promise()
+new Promise (function(){
+})
+new Promise(function(resolve,reject){
+
+})
+new Promise (function(resolve,reject){
+if(condition){
+resolve('success')
+}else{
+reject('fail')
+}
+})
+
+
+    
+    -->
+
+    <script>
+
+        function prom(complete) {
+
+            return new Promise(function (resolve, reject) {
+                if (complete) {
+                    resolve('sucess')
+                } else {
+                    reject('fail')
+                }
+            })
+        }
+        prom(false)
+            .then((result) => {
+                console.log(result)
+            })
+            .catch((error) => {
+                console.log(error)
+            })
+
+        // console.log(Math.random())
+        // generate a promise in which if the random no generated in greater than 0.5 , the promise will resolve  and o/p will be "the random no. generated is -----" if the random no. generated is less than 0.5 the promise will reject o/p is " the random no. generated is too low ", the random no. should be generated after 3 seconds 
+
+
+        // function fullName() {
+        //     document.write("john depole")
+        // }
+        // fullName()
+
+        // es6:arrow based
+        //         const fullNamee=(abc)=>{
+        //             document.write(abc+"diksha jaggi")
+        //         }
+        //    fullNamee("hello")
+
+
+
+        // function fullName(fname,lname){
+        //   document.write("hello"+" "+fname+" "+lname)
+        // }
+        // fullName("john","depole")
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
