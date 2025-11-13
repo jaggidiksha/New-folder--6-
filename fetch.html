@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 
+    es6 (ecmascript2015)and beyond 
+    ecma : european comp manufacturer association
+    c            r       u           d
+    create    read     update      delete 
+
+
+    ajax : async js and xml (traditional way)
+    
+    xml : extensible markup lang
+    markup lang is a lang in which we use some special symbols to write the code 
+   html : < >,xml:mathematical status codes  404
+
+  fetch : es6    crud
+
+  c       r          u           d
+  post    get        put        delete : http methods 
+
+  syntax : fetch(url)
+
+  fetch(url)---------------------------- >promise
+  
+  fetch(url).then() -------------------- >promise 
+
+  fetch(url ).then().then()
+
+  1st .then()tells us the type of data : text 
+                                          json /array of objects
+                                          [
+                                          {
+                                          name:"john",
+                                          age:24
+                                          },
+                                          {
+                                          name:"eric",
+                                          age:34
+                                          }
+                                          ]
+2nd .then is used to print data 
+
+
+fetch(url)
+.then(type of data)
+.then(print the data)
+.catch(error representation)
+
+    -->
+
+
+    <script>
+        // fetch("content/file.txt")
+        // .then(function(response){
+        //     return response.text()
+        // })
+        // .then(function(result){
+        //   console.log(result)
+        // } )
+        // .catch(function(error){
+        //     console.log(error)
+        // })
+
+
+        //     fetch("content/file.txt")
+        //     .then((response)=>{
+        //  return response.text()
+        //     }).then((result)=>{
+        //  document.write(result)
+        //     }).catch((error)=>{
+        //         console.log(error)
+        //     })
+
+
+
+        // fetch("content/file.txt")
+        // .then(response=>response.text())
+        // .then(result=>console.log(result))
+        // .catch(error=>console.log(error))
+
+
+        // fetch("http://jsonplaceholder.typicode.com/users")
+        // .then(data=>data.json())
+        // .then(result=>console.log(result))
+        // .catch(error=>console.log("data not fetched",error))
+
+
+        // map function :   works similar to forEach  but a lil syntax difference and advancement 
+
+        let ar = [4, 5, 6, 7]
+        ar.map(test)
+        function test(x) {
+            console.log(x + 2)
+        }
+
+        let ary = [
+            {
+                fname: "diksha",
+                lname: "jaggi"
+            },
+            {
+                fname: "akhil",
+                lname: "jaggi"
+            }
+        ]
+
+        ary.map(text)
+        function text(x) {
+            document.write(x.fname + " " + x.lname + " ")
+        }
+
+
+
+        //  async function abc(){
+        //      return "john"
+        //  }
+        //  console.log(abc())
+
+
+        //  async function abc(){
+        //     return "eric"
+        //  }
+        //  abc().then((result)=>{
+        //     console.log(result)
+        //  })
+
+        async function xyz() {
+
+            console.log("a")
+            await console.log("b")
+            console.log("c")
+        }
+        xyz()
+        console.log("d")
+        console.log("e")
+
+        // backend     ---------  database 
+        //
+
+        // forEach : each element of an array
+
+        // let ary=[2,3,4,5]
+        //     ary.forEach((x)=>{
+        //   console.log(x*2)
+        //     })
+
+
+        // ary.forEach(test)
+        // function test(x){
+        //  console.log(x*3)
+        // }
+
+
+
+    </script>
+</body>
+
+</html>
