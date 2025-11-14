@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array  : a collection of hetergenous data , array's index value always starts from 0 , but the length of an array starts from 1 
+
+        // array constructor 
+        // array literal 
+
+        // 1. constructor 
+    //     let ary=new Array(12,2,4,5,"car","bus",true,78,"train")
+    //     console.log(ary)
+
+    //    let aryy= Array("car",2,"bus","bike",4)
+    //    console.log(aryy)
+
+    //    2. literal 
+    // let ar=[2,3,4,5,"car","bike","bus"]
+    // console.log(ar)
+
+
+    // let ar=["car",3,4,"bike","bus",45]
+    // console.log(ar)
+
+    // indexing 
+
+    // console.log(ar[3])
+
+    // ar[3]="train"
+    // console.log(ar)
+
+//  to check the length of an array 
+    // console.log(ar.length)
+// to check index of particular element
+    // console.log(ar.indexOf("bus"))
+
+    // ar[4]="cycle"
+    // console.log(ar)
+
+    // to add element at the end 
+    // ar.push("bus")
+    // console.log(ar)
+
+    // to add element at the start 
+    // ar.unshift("bike")
+    // console.log(ar)
+
+
+    // to remove the last element 
+    // ar.pop()
+    // ar.pop()
+    // ar.pop()
+    // console.log(ar)
+
+    // to remove starting element 
+    // ar.shift()
+    // console.log(ar)
+
+    // to empty the whole array 
+    // ar.length=0
+    // console.log(ar)
+
+
+    // splice 
+
+        let ar=["car",3,4,"bike","bus",45]
+        console.log(ar)
+
+        // ar.splice(1,2,"train") //train will be added at indexvalue 1 and 0 elements will be removed after that
+        // console.log(ar)
+
+        // ar.splice(3,1,"hii")
+        // console.log(ar)
+
+
+        // slice : used to create a shallow copy of an array 
+
+        // console.log(ar.slice())
+        //  we can specify the starting index 
+        // console.log(ar.slice(3))
+
+        // we can specify the starting and ending index's also 
+        // console.log(ar.slice(1,5))
+
+        // we can provide -ve index's also 
+        // console.log(ar.slice(-3))
+
+        // let ar=[23,4,22,5,6,56,78,1,9,8]
+        // find the biggest element in the array , smallest, even number , odd numbers 
+
+        for(let i=1;i<=ar.length;i++){
+let max=ar[0]
+ar[i]>max;
+max=ar[i]
+
+        }
+
+
+    </script>
+</body>
+</html>
